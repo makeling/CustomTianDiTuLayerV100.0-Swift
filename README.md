@@ -1,6 +1,6 @@
-CustomTianDiTuLayerV100.0-ObjC
+CustomTianDiTuLayerV100.0-Swift
 ==========================
-[中文说明](https://github.com/makeling/CustomTianDiTuLayerV100.0-ObjC/blob/master/README_CN.md)
+[中文说明](https://github.com/makeling/CustomTianDiTuLayerV100.0-Swift/blob/master/README_CN.md)
 
 ## OverView
 This repository contains sample code demonstrating how to customize a tianditu wmts layer based on ArcGIS Runtime SDK for iOS 100.0. This sample is an entire project that can be opened in XCode and instantly run on a simulator or a device.
