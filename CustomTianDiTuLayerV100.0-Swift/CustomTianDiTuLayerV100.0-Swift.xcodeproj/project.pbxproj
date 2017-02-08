@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E167FEA11E496DA1008D2922 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167FEA01E496DA1008D2922 /* AppDelegate.swift */; };
+		E167FEA31E496DA1008D2922 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167FEA21E496DA1008D2922 /* ViewController.swift */; };
+		E167FEA61E496DA1008D2922 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E167FEA41E496DA1008D2922 /* Main.storyboard */; };
+		E167FEA81E496DA1008D2922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E167FEA71E496DA1008D2922 /* Assets.xcassets */; };
+		E167FEAB1E496DA1008D2922 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E167FEA91E496DA1008D2922 /* LaunchScreen.storyboard */; };
+		E167FEB41E496FCB008D2922 /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E167FEB31E496FCB008D2922 /* libc++.1.dylib */; };
+		E167FEB61E496FE6008D2922 /* ArcGIS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E167FEB51E496FE6008D2922 /* ArcGIS.framework */; };
+		E167FEB91E497050008D2922 /* TianDiTuLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167FEB81E497050008D2922 /* TianDiTuLayer.swift */; };
+		E167FEBB1E49706C008D2922 /* TianDiTuLayerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167FEBA1E49706C008D2922 /* TianDiTuLayerInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E167FE9D1E496DA1008D2922 /* CustomTianDiTuLayerV100.0-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CustomTianDiTuLayerV100.0-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E167FEA01E496DA1008D2922 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E167FEA21E496DA1008D2922 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E167FEA51E496DA1008D2922 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E167FEA71E496DA1008D2922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E167FEAA1E496DA1008D2922 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E167FEAC1E496DA1008D2922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E167FEB31E496FCB008D2922 /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "../../../../../usr/lib/libc++.1.dylib"; sourceTree = "<group>"; };
+		E167FEB51E496FE6008D2922 /* ArcGIS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ArcGIS.framework; path = ../../../Library/SDKs/ArcGIS/iOS/Frameworks/Static/ArcGIS.framework; sourceTree = "<group>"; };
+		E167FEB81E497050008D2922 /* TianDiTuLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TianDiTuLayer.swift; sourceTree = "<group>"; };
+		E167FEBA1E49706C008D2922 /* TianDiTuLayerInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TianDiTuLayerInfo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E167FE9A1E496DA1008D2922 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E167FEB61E496FE6008D2922 /* ArcGIS.framework in Frameworks */,
+				E167FEB41E496FCB008D2922 /* libc++.1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E167FE941E496DA1008D2922 = {
+			isa = PBXGroup;
+			children = (
+				E167FE9F1E496DA1008D2922 /* CustomTianDiTuLayerV100.0-Swift */,
+				E167FE9E1E496DA1008D2922 /* Products */,
+				E167FEB21E496FCB008D2922 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E167FE9E1E496DA1008D2922 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E167FE9D1E496DA1008D2922 /* CustomTianDiTuLayerV100.0-Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E167FE9F1E496DA1008D2922 /* CustomTianDiTuLayerV100.0-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				E167FEB71E496FF1008D2922 /* TianDiTu2.0 */,
+				E167FEA01E496DA1008D2922 /* AppDelegate.swift */,
+				E167FEA21E496DA1008D2922 /* ViewController.swift */,
+				E167FEA41E496DA1008D2922 /* Main.storyboard */,
+				E167FEA71E496DA1008D2922 /* Assets.xcassets */,
+				E167FEA91E496DA1008D2922 /* LaunchScreen.storyboard */,
+				E167FEAC1E496DA1008D2922 /* Info.plist */,
+			);
+			path = "CustomTianDiTuLayerV100.0-Swift";
+			sourceTree = "<group>";
+		};
+		E167FEB21E496FCB008D2922 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E167FEB51E496FE6008D2922 /* ArcGIS.framework */,
+				E167FEB31E496FCB008D2922 /* libc++.1.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E167FEB71E496FF1008D2922 /* TianDiTu2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				E167FEB81E497050008D2922 /* TianDiTuLayer.swift */,
+				E167FEBA1E49706C008D2922 /* TianDiTuLayerInfo.swift */,
+			);
+			name = TianDiTu2.0;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E167FE9C1E496DA1008D2922 /* CustomTianDiTuLayerV100.0-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E167FEAF1E496DA1008D2922 /* Build configuration list for PBXNativeTarget "CustomTianDiTuLayerV100.0-Swift" */;
+			buildPhases = (
+				E167FE991E496DA1008D2922 /* Sources */,
+				E167FE9A1E496DA1008D2922 /* Frameworks */,
+				E167FE9B1E496DA1008D2922 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CustomTianDiTuLayerV100.0-Swift";
+			productName = "CustomTianDiTuLayerV100.0-Swift";
+			productReference = E167FE9D1E496DA1008D2922 /* CustomTianDiTuLayerV100.0-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E167FE951E496DA1008D2922 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = esrichina.com;
+				TargetAttributes = {
+					E167FE9C1E496DA1008D2922 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = GDPQ8EGCXX;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E167FE981E496DA1008D2922 /* Build configuration list for PBXProject "CustomTianDiTuLayerV100.0-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E167FE941E496DA1008D2922;
+			productRefGroup = E167FE9E1E496DA1008D2922 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E167FE9C1E496DA1008D2922 /* CustomTianDiTuLayerV100.0-Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E167FE9B1E496DA1008D2922 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E167FEAB1E496DA1008D2922 /* LaunchScreen.storyboard in Resources */,
+				E167FEA81E496DA1008D2922 /* Assets.xcassets in Resources */,
+				E167FEA61E496DA1008D2922 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E167FE991E496DA1008D2922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E167FEA31E496DA1008D2922 /* ViewController.swift in Sources */,
+				E167FEBB1E49706C008D2922 /* TianDiTuLayerInfo.swift in Sources */,
+				E167FEA11E496DA1008D2922 /* AppDelegate.swift in Sources */,
+				E167FEB91E497050008D2922 /* TianDiTuLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E167FEA41E496DA1008D2922 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E167FEA51E496DA1008D2922 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E167FEA91E496DA1008D2922 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E167FEAA1E496DA1008D2922 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E167FEAD1E496DA1008D2922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E167FEAE1E496DA1008D2922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E167FEB01E496DA1008D2922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GDPQ8EGCXX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/maklmac/Library/SDKs/ArcGIS/iOS/Frameworks/Static/**",
+					"$(USER_LIBRARY_DIR)/SDKs/ArcGIS/iOS/Frameworks/Static",
+				);
+				INFOPLIST_FILE = "CustomTianDiTuLayerV100.0-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "makl.CustomTianDiTuLayerV100-0-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E167FEB11E496DA1008D2922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GDPQ8EGCXX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/maklmac/Library/SDKs/ArcGIS/iOS/Frameworks/Static/**",
+					"$(USER_LIBRARY_DIR)/SDKs/ArcGIS/iOS/Frameworks/Static",
+				);
+				INFOPLIST_FILE = "CustomTianDiTuLayerV100.0-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "makl.CustomTianDiTuLayerV100-0-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E167FE981E496DA1008D2922 /* Build configuration list for PBXProject "CustomTianDiTuLayerV100.0-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E167FEAD1E496DA1008D2922 /* Debug */,
+				E167FEAE1E496DA1008D2922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E167FEAF1E496DA1008D2922 /* Build configuration list for PBXNativeTarget "CustomTianDiTuLayerV100.0-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E167FEB01E496DA1008D2922 /* Debug */,
+				E167FEB11E496DA1008D2922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E167FE951E496DA1008D2922 /* Project object */;
+}
