@@ -22,9 +22,9 @@ class ViewController: UIViewController {
        
         self.map = AGSMap()
         
-        let tdtInfo = TianDiTuLayerInfo(layerType: TianDiTuLayerType.TDT_VECTOR, spttype: TianDiTuSpatialReferenceType.TDT_2000)
+        let tdtInfo = TianDiTuLayerInfo(layerType: TianDiTuLayerType.TDT_VECTOR, spttype: TianDiTuSpatialReferenceType.TDT_MERCATOR)
         
-        let tdtannoInfo = TianDiTuLayerInfo(layerType: TianDiTuLayerType.TDT_VECTOR, lan: TianDiTuLanguageType.TDT_CN, spttype: TianDiTuSpatialReferenceType.TDT_2000)
+        let tdtannoInfo = TianDiTuLayerInfo(layerType: TianDiTuLayerType.TDT_VECTOR, lan: TianDiTuLanguageType.TDT_CN, spttype: TianDiTuSpatialReferenceType.TDT_MERCATOR)
         
         let ltl1 = TianDiTuLayer(tiandituLayerInfo: tdtInfo)
         
@@ -34,6 +34,7 @@ class ViewController: UIViewController {
         self.map.operationalLayers.add(ltl2)
         
         self.mapView.map = self.map
+        
     }
 
     override func didReceiveMemoryWarning() {
