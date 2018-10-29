@@ -178,6 +178,12 @@ class TianDiTuLayerInfo{
             
             _baseRelu = _baseRelu / 2
             _baseScale = _baseScale / 2
+            
+
+            
+            
+//            print(_baseRelu, " :", _baseScale)
+//            print(_baseScale)
         }
     }
 
