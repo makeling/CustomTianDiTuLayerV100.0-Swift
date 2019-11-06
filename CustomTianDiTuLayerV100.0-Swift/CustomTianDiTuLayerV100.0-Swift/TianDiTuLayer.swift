@@ -25,9 +25,9 @@ class TianDiTuLayer:AGSImageTiledLayer{
             
             let aURL = NSURL(string: requestUrl)
             
-            let imageData = NSData(contentsOf: aURL as! URL)
+            let imageData = NSData(contentsOf: aURL! as URL)
             
-            let img = UIImage(data: imageData as! Data)
+            let img = UIImage(data: imageData! as Data)
             
             self?.respond(with: tileKey, data: UIImagePNGRepresentation(img!), error: nil)
             

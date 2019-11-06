@@ -30,7 +30,7 @@ enum TianDiTuSpatialReferenceType{
 
 class TianDiTuLayerInfo{
     
-    let kURLGetTile = "http://t0.tianditu.com/%@/wmts?service=wmts&request=gettile&version=1.0.0&layer=%@&format=tiles&tilematrixset=%@"
+    let kURLGetTile = "http://t0.tianditu.com/%@/wmts?service=wmts&request=gettile&version=1.0.0&layer=%@&format=tiles&tilematrixset=%@&tk=0a23443374f2a99191101e****"
     
     let tiandituURL = "http://t0.tianditu.com/%@/wmts"
     

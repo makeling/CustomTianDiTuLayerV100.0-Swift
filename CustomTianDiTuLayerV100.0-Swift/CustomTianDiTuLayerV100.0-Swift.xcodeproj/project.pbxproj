@@ -12,11 +12,25 @@
 		E167FEA61E496DA1008D2922 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E167FEA41E496DA1008D2922 /* Main.storyboard */; };
 		E167FEA81E496DA1008D2922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E167FEA71E496DA1008D2922 /* Assets.xcassets */; };
 		E167FEAB1E496DA1008D2922 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E167FEA91E496DA1008D2922 /* LaunchScreen.storyboard */; };
-		E167FEB41E496FCB008D2922 /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E167FEB31E496FCB008D2922 /* libc++.1.dylib */; };
-		E167FEB61E496FE6008D2922 /* ArcGIS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E167FEB51E496FE6008D2922 /* ArcGIS.framework */; };
 		E167FEB91E497050008D2922 /* TianDiTuLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167FEB81E497050008D2922 /* TianDiTuLayer.swift */; };
 		E167FEBB1E49706C008D2922 /* TianDiTuLayerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167FEBA1E49706C008D2922 /* TianDiTuLayerInfo.swift */; };
+		E187BEDB2372BA9B00F0A1A8 /* ArcGIS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E187BEDA2372BA9B00F0A1A8 /* ArcGIS.framework */; };
+		E187BEDC2372BA9B00F0A1A8 /* ArcGIS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E187BEDA2372BA9B00F0A1A8 /* ArcGIS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E187BEDD2372BA9B00F0A1A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E187BEDC2372BA9B00F0A1A8 /* ArcGIS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E167FE9D1E496DA1008D2922 /* CustomTianDiTuLayerV100.0-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CustomTianDiTuLayerV100.0-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +44,7 @@
 		E167FEB51E496FE6008D2922 /* ArcGIS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ArcGIS.framework; path = ../../../Library/SDKs/ArcGIS/iOS/Frameworks/Static/ArcGIS.framework; sourceTree = "<group>"; };
 		E167FEB81E497050008D2922 /* TianDiTuLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TianDiTuLayer.swift; sourceTree = "<group>"; };
 		E167FEBA1E49706C008D2922 /* TianDiTuLayerInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TianDiTuLayerInfo.swift; sourceTree = "<group>"; };
+		E187BEDA2372BA9B00F0A1A8 /* ArcGIS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ArcGIS.framework; path = ../../../Library/SDKs/ArcGIS/iOS/Frameworks/Dynamic/ArcGIS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,8 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E167FEB61E496FE6008D2922 /* ArcGIS.framework in Frameworks */,
-				E167FEB41E496FCB008D2922 /* libc++.1.dylib in Frameworks */,
+				E187BEDB2372BA9B00F0A1A8 /* ArcGIS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				E167FEB51E496FE6008D2922 /* ArcGIS.framework */,
+				E187BEDA2372BA9B00F0A1A8 /* ArcGIS.framework */,
 				E167FEB31E496FCB008D2922 /* libc++.1.dylib */,
 			);
 			name = Frameworks;
@@ -104,6 +119,8 @@
 				E167FE991E496DA1008D2922 /* Sources */,
 				E167FE9A1E496DA1008D2922 /* Frameworks */,
 				E167FE9B1E496DA1008D2922 /* Resources */,
+				E187BEDD2372BA9B00F0A1A8 /* Embed Frameworks */,
+				E187BEDE2372BBD100F0A1A8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -136,6 +153,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -161,6 +179,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E187BEDE2372BBD100F0A1A8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/ArcGIS.framework/strip-frameworks.sh\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E167FE991E496DA1008D2922 /* Sources */ = {
@@ -293,22 +331,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GDPQ8EGCXX;
 				FRAMEWORK_SEARCH_PATHS = (
-					"/Users/maklmac/Library/SDKs/ArcGIS/iOS/Frameworks/Static/**",
+					"$(inherited)",
+					"$(HOME)/Library/SDKs/ArcGIS/iOS/Frameworks/Dynamic",
 					"$(USER_LIBRARY_DIR)/SDKs/ArcGIS/iOS/Frameworks/Static",
+					"$(USER_LIBRARY_DIR)/SDKs/ArcGIS/iOS/Frameworks/Dynamic",
 				);
 				INFOPLIST_FILE = "CustomTianDiTuLayerV100.0-Swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					ArcGIS,
-					"-l",
-					"c++",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "makl.CustomTianDiTuLayerV100-0-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -318,22 +352,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GDPQ8EGCXX;
 				FRAMEWORK_SEARCH_PATHS = (
-					"/Users/maklmac/Library/SDKs/ArcGIS/iOS/Frameworks/Static/**",
+					"$(inherited)",
+					"$(HOME)/Library/SDKs/ArcGIS/iOS/Frameworks/Dynamic",
 					"$(USER_LIBRARY_DIR)/SDKs/ArcGIS/iOS/Frameworks/Static",
+					"$(USER_LIBRARY_DIR)/SDKs/ArcGIS/iOS/Frameworks/Dynamic",
 				);
 				INFOPLIST_FILE = "CustomTianDiTuLayerV100.0-Swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					ArcGIS,
-					"-l",
-					"c++",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "makl.CustomTianDiTuLayerV100-0-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
